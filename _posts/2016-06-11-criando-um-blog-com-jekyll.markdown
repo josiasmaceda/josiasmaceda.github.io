@@ -24,7 +24,7 @@ $ cd meublog #Entra na pasta do projeto
 Para executar o servidor:
 
 ```sh
-$ jekyll server -w
+$ jekyll server -w #Lembre se de executar o comando dentro do diretório do seu projeto
 ```
 
 Em seguida acesse <http://localhost:4000> e veja o servidor rodando.
