@@ -4,7 +4,7 @@ meta_description: "Blog sobre os mais diversos temas relacionados ao desenvolvim
 email: josiasmaceda@hotmail.com
 
 markdown: kramdown
-#highlighter: pygments
+highlighter: rouge
 logo: true
 paginate: 15
 baseurl: /
