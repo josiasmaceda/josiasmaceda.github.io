@@ -3,6 +3,7 @@ layout: post
 title: "Instalando e configurando o Jekyll"
 date: 2016-06-11 18:38:00
 comments: true
+disqus: true
 author: josiasmaceda
 categories: web jekyll
 ---
