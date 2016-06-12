@@ -1,11 +1,11 @@
 name: Josias Maceda
-description: Blog destinado a apreciadores de um software de qualidade
+description: Destinado a apreciadores de um software de qualidade
 meta_description: "Blog sobre os mais diversos temas relacionados ao desenvolvimento de software"
 email: josiasmaceda@hotmail.com
 
 markdown: kramdown
 #highlighter: pygments
-logo: false
+logo: true
 paginate: 15
 baseurl: /
 domain_name: 'https://josiasmaceda.github.io'
