@@ -13,5 +13,5 @@ google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://josiasmaceda.github.io'
+url:            'https://josiasmaceda.com.br'
 author:         'Josias Maceda'
