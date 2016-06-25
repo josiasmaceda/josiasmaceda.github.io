@@ -5,7 +5,9 @@ date: 2016-06-10 18:38:00
 comments: true
 disqus: true
 author: josiasmaceda
-categories: web jekyll
+tags:
+ - web
+ - jekyll
 ---
 
 ![Jekyll](https://jekyllrb.com/img/logo-2x.png)
@@ -14,7 +16,7 @@ Hello! Já ouvi falar do jekyll?
 
 Jekyll é um gerador de sites estáticos desenvolvido em Ruby, sendo muito utilizado para a criação de Blogs, sim Blogs, este blog foi desenvolvido utilizando Jekyll, o que achou legal né :). A grande vantagem é de não necessitar de banco de dados ou servidor backend para armazenar os posts no caso de um Blog, outro ponto positivo é que o site vai ser todo estático, logo o carregamento será muito mais rápido que outras ferramentas de criação de blogs como o Wordpress. 
 
-O **[Jekyll](http://jekyllrb.com/ "Clique aqui e acesse o site do Jekyll")** utiliza a ferramenta Liquid para a criação de templates, e o YAML para o armazenamento de variáveis, e o mais interessante ele utiliza o Markdown para a formatação de textos, neste caso POSTs do blog. Para começar a brincar com ele :) comece instalando ele, para saber como instalar veja o post **[Instalando o Jekyll](https://josiasmaceda.com.br/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** onde detalho como instalar e iniciar ele pela primeira vez. 
+O **[Jekyll](http://jekyllrb.com/ "Clique aqui e acesse o site do Jekyll")** utiliza a ferramenta Liquid para a criação de templates, e o YAML para o armazenamento de variáveis, e o mais interessante ele utiliza o Markdown para a formatação de textos, neste caso POSTs do blog. Para começar a brincar com ele :) comece instalando ele, para saber como instalar veja o post **[Instalando o Jekyll]({{site.url}}/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** onde detalho como instalar e iniciar ele pela primeira vez. 
 
 
 >### Como funciona
@@ -52,16 +54,21 @@ title: Post com jekyll
 
 Você observou que utilizando o YAML definimos o nome da variável title, agora vamos utilizar ela utilizando Liquid. Para utilizar basta colocar ``{{page.title}}`` em meio ao seu html para que o Jekyll substitua a instrução pela que foi definida na declaração da variável. Veja o exemplo abaixo:
 
-```html
+{% highlight html %}
 <html>
 <head>
     <meta charset="utf8">
     <title>{{page.title}}</title>
 </head>
-```
+{% endhighlight %}
 
 Neste exemplo foi utilizado o prefixo `page` pois estamos acessando os valores da página declarados no topo utilizando front-matter **YAML**, quando for fazer referência ao site você deve utilizar o prefixo `site`, os valores utilizados a partir do prefixo `site` são obtidos do arquivo **_config.yml**.
 
-Neste post apresentei as tecnologias envolvidas e os principios do jekyll e de como utiliza-lo. Ficou interessado no post  **[Instalando o Jekyll](https://josiasmaceda.com.br/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** eu mostro como fazer a instalação e começar a diversão.  
+Neste post apresentei as tecnologias envolvidas e os principios do jekyll e de como utiliza-lo. Ficou interessado no post  **[Instalando o Jekyll]({{site.url}}/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** eu mostro como fazer a instalação e começar a diversão.  
 
 See you next post!!.
+
+>### Referências
+
+* [Documentação Front Matter](https://jekyllrb.com/docs/frontmatter/)  
+* [Documentação Liquit templates](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)

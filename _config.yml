@@ -4,9 +4,13 @@ meta_description: "Blog sobre os mais diversos temas relacionados ao desenvolvim
 email: josiasmaceda@hotmail.com
 
 markdown: kramdown
+# o permalink é utilizado para montar a url dos posts
+# permalink: /:categories/:title
 highlighter: rouge
 logo: true
 paginate: 15
+# a var baseurl define a url base do site :)
+# baseurl/blog
 baseurl: /
 domain_name: 'https://josiasmaceda.github.io'
 google_analytics: 'UA-38707432-2'
