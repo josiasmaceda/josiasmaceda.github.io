@@ -5,6 +5,7 @@ date: 2016-06-10 18:38:00
 comments: true
 disqus: true
 author: josiasmaceda
+categories: web jekyll
 tags:
  - web
  - jekyll
@@ -54,7 +55,7 @@ title: Post com jekyll
 
 Você observou que utilizando o YAML definimos o nome da variável title, agora vamos utilizar ela utilizando Liquid. Para utilizar basta colocar ``{{page.title}}`` em meio ao seu html para que o Jekyll substitua a instrução pela que foi definida na declaração da variável. Veja o exemplo abaixo:
 
-{% highlight html %}
+{% highlight html linenos %}
 <html>
 <head>
     <meta charset="utf8">
