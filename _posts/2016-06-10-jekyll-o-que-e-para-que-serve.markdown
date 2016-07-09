@@ -6,6 +6,7 @@ comments: true
 disqus: true
 author: josiasmaceda
 categories: web jekyll
+published: true
 tags:
  - web
  - jekyll
@@ -59,13 +60,15 @@ Você observou que utilizando o YAML definimos o nome da variável title, agora 
 <html>
 <head>
     <meta charset="utf8">
-    <title>{{page.title}}</title>
+    <title>
+    	{{ "{{page.title" }}}}
+    </title>
 </head>
 {% endhighlight %}
 
 Neste exemplo foi utilizado o prefixo `page` pois estamos acessando os valores da página declarados no topo utilizando front-matter **YAML**, quando for fazer referência ao site você deve utilizar o prefixo `site`, os valores utilizados a partir do prefixo `site` são obtidos do arquivo **_config.yml**.
 
-Neste post apresentei as tecnologias envolvidas e os principios do jekyll e de como utiliza-lo. Ficou interessado no post  **[Instalando o Jekyll]({{site.url}}/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** eu mostro como fazer a instalação e começar a diversão.  
+Neste post apresentei as tecnologias envolvidas e os principios do jekyll e de como utiliza-lo. Ficou interessado no post? No Post  **[Instalando o Jekyll]({{site.url}}/web/jekyll/2016/06/11/instalando-o-jekyll.html "clique aqui")** eu mostro como fazer a instalação e começar a diversão.  
 
 See you next post!!.
 
